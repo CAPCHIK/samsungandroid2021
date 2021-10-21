@@ -1,31 +1,27 @@
 package ru.capchik.samsungandroid2021.iep0321.l211014;
 
 public class Hero {
-    private final String type;
+    private int hp;
 
-
-    public static Hero createAlyans() {
-        return new Hero("Альянс");
+    public Hero(int hp) {
+        this.hp = hp;
     }
 
-    public static Hero createOrda() {
-        return new Hero("Орда");
+    public int getHp() {
+        return hp;
     }
 
-    public static Hero createNezit() {
-        return new Hero("Нежить");
-    }
-
-    private Hero(String type) {
-        this.type = type;
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 
     public String say(){
-        switch (type){
-            case "Орда": return "Опять работа?!";
-            case "Альянс": return "За Альянс!";
-            case "Нежить": return "Смерть за Нерзула!";
-            default: return "*звуки неловкого молчания*";
-        }
+        return "*звуки неловкого молчания*";
+//        switch (type){
+//            case "Орда": return "Опять работа?!";
+//            case "Альянс": return "За Альянс!";
+//            case "Нежить": return "Смерть за Нерзула!";
+//            default:
+//        }
     }
 }

@@ -15,15 +15,54 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Hero h1 = Hero.createAlyans();
-        System.out.println(h1.say());
-        Hero h2 = Hero.createOrda();
-        System.out.println(h2.say());
-        Hero h3 = Hero.createNezit();
-        System.out.println(h3.say());
+        Rectangle r = new Rectangle(4,6);
+        System.out.println(r);
+        formRect(r, 7);
+        System.out.println(r);
+
+        Square sq = new Square(6);
+        System.out.println(sq);
+        sq.setWidth(45);
+        System.out.println(sq);
+
+        Rectangle rectangle = sq;
+        formRect(rectangle, 9);
+        System.out.println(rectangle);
+
+
 
     }
 
+    private static void formRect(
+            Rectangle rectangle,
+            int baseSize
+    ) {
+        rectangle.setWidth(baseSize);
+        rectangle.setHeight(baseSize * 2);
+    }
+
+
+    private static void workWithHeroes() {
+        Hero h = new Hero(45);
+        System.out.println(h.getHp());
+        AlyansHero ah = new AlyansHero(56);
+        System.out.println(ah.getHp());
+        Hero[] heroes = { h, ah, new OrdaHero(12) };
+        for (Hero hero : heroes) {
+            System.out.println(hero.say());
+            hero.setHp(15);
+            System.out.println(hero.getHp());
+        }
+    }
+
+    private static void WOTKwITHpRIVATEcONSTRUCTOR() {
+    //        Hero h1 = Hero.createAlyans();
+//        System.out.println(h1.say());
+//        Hero h2 = Hero.createOrda();
+//        System.out.println(h2.say());
+//        Hero h3 = Hero.createNezit();
+//        System.out.println(h3.say());
+}
     private static void workWithScans() {
         Scanner scanner = new Scanner(System.in);
         int num1 = scanner.nextInt();
