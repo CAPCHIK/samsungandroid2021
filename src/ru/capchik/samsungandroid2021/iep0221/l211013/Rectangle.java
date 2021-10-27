@@ -28,4 +28,9 @@ public class Rectangle extends Shape{
     public void setHeight(int height) {
         this.height = height;
     }
+
+    @Override
+    public double getSquare() {
+        return width * height;
+    }
 }
