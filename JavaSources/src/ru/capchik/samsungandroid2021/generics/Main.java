@@ -9,8 +9,8 @@ public class Main {
         SomeGenericType<Object> type2 = new SomeGenericType<>("O",'f');
         Object value1 = type.getValue1();
 
-        System.out.println(DoAction(type));
-        System.out.println(DoAction(type2));
+//        System.out.println(DoAction(type));
+//        System.out.println(DoAction(type2));
 
         Main m = getSome();
 

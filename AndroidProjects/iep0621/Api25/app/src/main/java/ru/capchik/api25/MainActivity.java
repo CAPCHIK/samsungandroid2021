@@ -15,19 +15,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView textView = (TextView) findViewById(R.id.textViewId);
-        SomeClass2 some = (SomeClass2) getSome();
 
-        SomeClass2 arg = getSome2();
-        doWork(getSome2());
+        TextView text = (TextView) findViewById(R.id.textViewId);
     }
 
-    private void doWork(SomeClass2 sc2) {
 
-    }
-
-    private SomeClass getSome(){ return new SomeClass2(); }
-    private <T extends SomeClass> T getSome2(){ return null; }
-    class SomeClass{}
-    class SomeClass2 extends SomeClass{}
 }
