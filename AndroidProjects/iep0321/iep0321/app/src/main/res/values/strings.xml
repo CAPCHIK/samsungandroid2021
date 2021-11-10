@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">iep0321</string>
+    <string name="app_name" translatable="false">iep0321</string>
+    <string name="click_me">Click me!</string>
+    <string name="new_button_text">New button text!</string>
 </resources>

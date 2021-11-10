@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="click_me">Нажми на меня</string>
+    <string name="new_button_text">Новый текст на кнопке</string>
+</resources>
