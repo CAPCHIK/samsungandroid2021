@@ -16,7 +16,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView text = (TextView) findViewById(R.id.textViewId);
+        TextView textView = (TextView) findViewById(R.id.textViewId);
+        TextView textView2 = (TextView) findViewById(R.id.buttonId);
+
+        TextView textView3 = findViewById(R.id.textViewId);
+        TextView textView4 = findViewById(R.id.buttonId);
     }
 
 
