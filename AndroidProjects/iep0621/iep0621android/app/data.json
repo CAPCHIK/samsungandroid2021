@@ -1,0 +1,35 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "type": "Orda",
+      "name": "Gorozh"
+    },
+    {
+      "id": 2,
+      "type": "Nezit",
+      "name": "Karl",
+      "age": 4456,
+      "field": 123,
+      "field2": 123,
+      "lesson": {
+        "file": "file.txt"
+      }
+    },
+    {
+      "name": "Maksim",
+      "type": "Alyans",
+      "id": 3
+    },
+    {
+      "name": "Maksim",
+      "type": "Alyans",
+      "df": [
+        {
+          "lol": "kek"
+        }
+      ],
+      "id": 4
+    }
+  ]
+}

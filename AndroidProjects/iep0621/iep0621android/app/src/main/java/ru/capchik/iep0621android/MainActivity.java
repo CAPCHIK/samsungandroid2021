@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import ru.capchik.iep0621android.parallel.TryParallelActivity;
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
@@ -21,10 +23,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Log.i(TAG, "current thread name: " + Thread.currentThread().getName() +
+                " current thread id : " + Thread.currentThread().getId());
+
         setContentView(R.layout.activity_main);
+
+        /// В рамках практики 2021.12.13 нам нужен сразу второй экран
+        startActivity(new Intent(this, TryParallelActivity.class));
+        if (true) {
+            return;
+        }
+        ///
 
         Button activity2Button = findViewById(R.id.start_second_activity_button);
         activity2Button.setOnClickListener(v -> {
+            Log.i(TAG, "BUTTON  !!! current thread name: " + Thread.currentThread().getName() +
+                    " current thread id : " + Thread.currentThread().getId());
+
             Intent intent = new Intent(this, SecondActivity.class);
             intent.putExtra("some_value", "Hello from extra");
             startActivity(intent);

@@ -3,4 +3,5 @@
     <string name="click_me">Click me!</string>
     <string name="button_clicket_text">Clicked!</string>
     <string name="result_is">Result is </string>
+    <string name="parallel_hard_counter_text">count: %d</string>
 </resources>

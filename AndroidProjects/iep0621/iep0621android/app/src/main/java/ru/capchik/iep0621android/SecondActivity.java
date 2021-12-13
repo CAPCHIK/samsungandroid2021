@@ -26,12 +26,15 @@ public class SecondActivity extends AppCompatActivity {
         }
         TextView textView = findViewById(R.id.text_for_extra);
         textView.setText(extra);
-
+        Log.i(TAG, "current thread name: " + Thread.currentThread().getName() +
+                " current thread id : " + Thread.currentThread().getId());
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "activity destroy");
+        Log.i(TAG, "current thread name: " + Thread.currentThread().getName() +
+                " current thread id : " + Thread.currentThread().getId());
     }
 }
