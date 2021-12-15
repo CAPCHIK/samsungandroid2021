@@ -1,0 +1,34 @@
+{
+  "heroes": [
+    {
+      "id": 0,
+      "name": "Maks",
+      "age": 789
+    },
+    {
+      "id": 15,
+      "name": "Michail",
+      "lol": "kek"
+    },
+    {
+      "name": "Maksim",
+      "type": "Alyans",
+      "df": [
+        {
+          "lol": "kek"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "name": "Maksim",
+      "type": "Alyans",
+      "df": [
+        {
+          "lol": "kek"
+        }
+      ],
+      "id": 17
+    }
+  ]
+}

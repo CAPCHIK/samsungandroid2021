@@ -28,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // ТОЛЬКО ДЛЯ ПРАКТИЧЕСКОЙ, ГДЕ НУЖНА ЭТА АКТИВНОСТЬ
+        goToParallelActivity();
+        if (true) {
+            return;
+        }
+        //.....
+
         setupCalculator();
 
         Button goToSecondActivity = findViewById(R.id.go_to_second_activity);
@@ -36,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
                     SecondActivity.class);
             startSecondActivity.putExtra("chatId", "some_chat_identifier");
             startActivity(startSecondActivity);
+        });
+
+        Button goToParallelActivity = findViewById(R.id.go_to_parallel_button);
+        goToParallelActivity.setOnClickListener(v -> {
+            goToParallelActivity();
         });
 
         Button openUri = findViewById(R.id.open_uri);
@@ -64,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void goToParallelActivity() {
+        Intent startSecondActivity = new Intent(this,
+                TryParallelActivity.class);
+        startActivity(startSecondActivity);
     }
 
     @Override
