@@ -1,0 +1,13 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Karl",
+      "isAlive": true
+    },
+    {
+      "id": 2,
+      "name": "Michail"
+    }
+  ]
+}
