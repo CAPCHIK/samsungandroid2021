@@ -2,4 +2,5 @@
 <resources>
     <string name="click_me">Нажми на меня</string>
     <string name="new_button_text">Новый текст на кнопке</string>
+    <string name="counter_text">%d сейчас</string>
 </resources>

@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import ru.capchik.iep0321.WorkWithParallel.TryParallelActivity;
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
@@ -25,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Только для практики, чтобы не тратить время
+        // Делать так всегда - низя
+        startActivity(new Intent(this, TryParallelActivity.class));
+        if (true) {
+            return;
+        }
+        ///
 
         setupCalculator();
 
