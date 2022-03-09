@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // ТОЛЬКО ДЛЯ ПРАКТИЧЕСКОЙ, ГДЕ НУЖНА ЭТА АКТИВНОСТЬ
-        goToParallelActivity();
+        goToServicesActivity();
         if (true) {
             return;
         }
@@ -81,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
     private void goToParallelActivity() {
         Intent startSecondActivity = new Intent(this,
                 TryParallelActivity.class);
+        startActivity(startSecondActivity);
+    }
+    private void goToServicesActivity() {
+        Intent startSecondActivity = new Intent(this,
+                WorkWithServicesActivity.class);
         startActivity(startSecondActivity);
     }
 
