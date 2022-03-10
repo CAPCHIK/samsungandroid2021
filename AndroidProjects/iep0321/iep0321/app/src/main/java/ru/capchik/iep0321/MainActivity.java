@@ -29,10 +29,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Только для практики, чтобы не тратить время
         // Делать так всегда - низя
-        startActivity(new Intent(this, TryParallelActivity.class));
+        startActivity(new Intent(this, WorkWithServicesActivity.class));
         if (true) {
             return;
         }
+        startActivity(new Intent(this, TryParallelActivity.class));
         ///
 
         setupCalculator();
