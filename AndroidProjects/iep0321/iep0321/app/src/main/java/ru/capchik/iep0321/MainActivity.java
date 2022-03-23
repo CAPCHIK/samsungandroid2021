@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Только для практики, чтобы не тратить время
         // Делать так всегда - низя
-        startActivity(new Intent(this, WorkWithServicesActivity.class));
+        startActivity(new Intent(this, LearnDrawActivity.class));
         if (true) {
             return;
         }
